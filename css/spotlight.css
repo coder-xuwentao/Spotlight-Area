@@ -1,0 +1,20 @@
+.slaDarkBackground {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  mask: linear-gradient(red, red), linear-gradient(red, red);
+  mask-size: var(--slaLightAreaWidth) var(--slaLightAreaHeight), 100%;
+  mask-repeat: no-repeat;
+  mask-position: var(--slaLightAreaX)  var(--slaLightAreaY), 0;
+  mask-composite: exclude;
+  background: rgba(0,0,0,.3);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.slaLightArea {
+  outline: 1px solid red;
+}
