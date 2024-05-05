@@ -24,14 +24,7 @@
     }
   },
   "permissions": ["scripting", "activeTab", "storage", "tabs"],
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "Command+B"
-      }
-    }
-  },
+  "commands": {},
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],

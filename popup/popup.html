@@ -12,11 +12,33 @@
         background-color: #fff;
       }
 
+      label {
+        display: block;
+      }
+
     </style>
+    <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
-    <h5>高亮选定区域</h5>
-    <button id="slaStartSelect">开始选择</button>
+    <div style="margin-bottom: 3px;">开启聚光灯</div>
+    <label class="slaSwitch" for="slaSpotlightSwitch">
+      <input type="checkbox" id="slaSpotlightSwitch">
+      <span class="slaSlider"></span>
+    </label>
+
+    <br>
+    <br>
+
+    <label for="slaRangeOfBlur">模糊度:
+      <output id="slaDeGreeOfBlur">0</output>
+    </label>
+    <input type="range" id="slaRangeOfBlur" class="slaRange" value="0" min="0" max="50">
+
+    <label for="slaDeGreeOfDarkness">暗度:
+      <output id="slaDeGreeOfDarkness">0</output>
+    </label>
+    <input type="range" id="slaRangeOfDarkness" class="slaRange"  value="0" min="0" max="100">
+
     <script src="popup.js"></script>
   </body>
 </html>

@@ -4,17 +4,28 @@
   height: 100%;
   left: 0;
   top: 0;
-  mask: linear-gradient(red, red), linear-gradient(red, red);
+  mask-image: linear-gradient(red, red), linear-gradient(red, red);
   mask-size: var(--slaLightAreaWidth) var(--slaLightAreaHeight), 100%;
   mask-repeat: no-repeat;
   mask-position: var(--slaLightAreaX)  var(--slaLightAreaY), 0;
   mask-composite: exclude;
-  background: rgba(0,0,0,.3);
-  backdrop-filter: blur(5px);
-  z-index: 9999;
+  background: rgba(0,0,0,var(--slaDeGreeOfDark));
+  backdrop-filter: blur(var(--slaDeGreeOfBlur));
+  z-index: 999999;
   pointer-events: none;
 }
 
 .slaLightArea {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+}
+
+.slaDisabledMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000000;
+  background: none;
 }
