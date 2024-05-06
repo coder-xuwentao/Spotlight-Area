@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Spotlight Area</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         width: 150px;
@@ -15,30 +15,53 @@
       label {
         display: block;
       }
-
     </style>
-    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="popup.css" />
   </head>
   <body>
-    <div style="margin-bottom: 3px;">开启聚光灯</div>
-    <label class="slaSwitch" for="slaSpotlightSwitch">
-      <input type="checkbox" id="slaSpotlightSwitch">
-      <span class="slaSlider"></span>
-    </label>
+    <div id="slaControls" style="visibility: hidden">
+      <span id="slaSwitchDesc" style="margin-bottom: 3px">
+        <!-- 开启聚光灯 -->
+      </span>
+      <label class="slaSwitch" for="slaSpotlightSwitch">
+        <input type="checkbox" id="slaSpotlightSwitch" />
+        <span class="slaSlider"></span>
+      </label>
 
-    <br>
-    <br>
+      <br />
+      <br />
 
-    <label for="slaRangeOfBlur">模糊度:
-      <output id="slaDeGreeOfBlur">0</output>
-    </label>
-    <input type="range" id="slaRangeOfBlur" class="slaRange" value="0" min="0" max="50">
+      <label for="slaRangeOfBlur">
+        <span id="slaBlurDesc">
+          <!-- 模糊度: -->
+        </span>
+        <output id="slaDeGreeOfBlur">0</output>
+      </label>
+      <input
+        type="range"
+        id="slaRangeOfBlur"
+        class="slaRange"
+        value="0"
+        min="0"
+        max="50"
+      />
 
-    <label for="slaDeGreeOfDarkness">暗度:
-      <output id="slaDeGreeOfDarkness">0</output>
-    </label>
-    <input type="range" id="slaRangeOfDarkness" class="slaRange"  value="0" min="0" max="100">
+      <label for="slaDeGreeOfDarkness">
+        <span id="slaDarknessDesc">
+          <!-- 暗度: -->
+        </span>
+        <output id="slaDeGreeOfDarkness">0</output>
+      </label>
+      <input
+        type="range"
+        id="slaRangeOfDarkness"
+        class="slaRange"
+        value="0"
+        min="0"
+        max="100"
+      />
 
-    <script src="popup.js"></script>
+      <script src="popup.js"></script>
+    </div>
   </body>
 </html>

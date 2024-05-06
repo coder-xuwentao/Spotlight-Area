@@ -1,0 +1,8 @@
+{
+  "pluginName": {"message": "SpotLight"},
+  "pluginDesc": {"message": "Highlight selected areas you want to focus on"},
+  "DeGreeOfBlur": {"message": "DeGree Of Blur: "},
+  "DeGreeOfDarkness": {"message": "DeGree Of Darkness: "},
+  "SpotLightSwitchDesc": {"message": "Open SpotLight: "},
+  "ContentNoSupport": {"message": "Spotlight cannot work on this web page, please try refreshing or switching to another page"}
+}

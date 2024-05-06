@@ -1,0 +1,8 @@
+{
+  "pluginName": {"message": "聚光灯"},
+  "pluginDesc": {"message": "高亮显示您想要关注的选定区域"},
+  "DeGreeOfBlur": {"message": "模糊度: "},
+  "DeGreeOfDarkness": {"message": "暗度: "},
+  "SpotLightSwitchDesc": {"message": "打开聚光灯: "},
+  "ContentNoSupport": {"message": "“聚光灯”在此网页下无法工作，请尝试刷新或切换另一个页面"}
+}
