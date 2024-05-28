@@ -24,7 +24,7 @@
       "128": "images/icon-128.png"
     }
   },
-  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "permissions": ["storage"],
   "commands": {},
   "content_scripts": [
     {
