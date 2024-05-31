@@ -6,4 +6,5 @@
 
 
 代码地址：https://github.com/coder-xuwentao/Spotlight-Area<br>
+相关掘金文章：https://juejin.cn/post/7374616167761117210<br>
 视频演示地址：https://www.bilibili.com/video/BV1V1421275j
